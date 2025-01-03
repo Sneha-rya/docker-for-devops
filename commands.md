@@ -44,3 +44,32 @@
 ### Building and Running Applications with Docker and Git
 - **Build an application image**: `docker build -t <app_name> .`
 - **Run the application**: `docker run -d -p <host_port>:<container_port> <app_name>`
+
+List Docker Images
+docker images
+
+Run a Docker Container
+docker run -d --name <container-name> -e <environment-variables> -p <host-port>:<container-port> <image-name>
+
+List Running Containers
+docker ps
+
+Stop and Remove a Container
+Stop a container:
+docker stop <container-id>
+Remove a container:
+docker rm <container-id>
+
+Build a Docker Image
+docker build -t <image-name> .
+
+Remove a Docker Image
+docker rmi <image-id>
+
+List Docker Volumes
+docker volume ls
+
+Create a Docker Volume
+docker volume create <volume-name>
+
+
